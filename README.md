@@ -1,17 +1,23 @@
 # Black-Hole-Image
 
 This repository is to put the simlation image/result of Kerr / Schwarzschild Black Hole, using the `WebGL` or `Metal`.  All the simulation is using the natural unit $(G=c=1)$, and the mass of black hole is $M = 1$. For Schwarzschild metric, we using
+
 $$
-\dd s^2 = \left(1 - \frac{r_s}{r}\right)\dd t^2 + \left(1 - \frac{r_s}{r}\right)^{-1}\dd r^2 + \dd\theta^2 + \sin^2\theta\,\dd\phi^2\;,
+d s^2 = \left(1 - \frac{r_s}{r}\right)d t^2 + \left(1 - \frac{r_s}{r}\right)^{-1}d r^2 + d\theta^2 + \sin^2\theta\,d\phi^2\;,
 $$
+
 where $r_s$ is the Schwarzschild radius given by $r_s = 2GM/c^2$ and here using spherical coordinate $(t,r,\theta,\phi)$. On the other hand, the Kerr metric is given by
+
 $$
 g_{\mu\nu} = \eta_{\mu\nu} + \left(\frac{2GMr^3}{r^4 + az^4}\right)k_{\mu}\,k_{\nu}\;,
 $$
+
 where $k_{\mu}$ is a unit vector given by $\displaystyle \vec{k} = \left(\frac {rx+ay}{r^2+a^2},\frac{ry-ax}{r^2+a^2},\frac{z}{r}\right)$, and here using Kerr–Schild "Cartesian" coordinates, which satisfied 
+
 $$
 x^2 + y^2 + z^2 = r^2 + a^2\left(1 - \frac{z^2}{r^2}\right)\;,
 $$
+
 and $a$ is the rotational parameter related to the angular momentum $J$, which is given by $a = J/Mc$. To see more introduction about Kerr metric, see arXiv paper: [2008, Matt Visser, *The Kerr spacetime: A brief introduction*](https://arxiv.org/abs/0706.0622).
 
 ## Example
