@@ -43,5 +43,3 @@ and $a$ is the rotational parameter related to the angular momentum $J$, which i
     $ ffmpeg -framerate 100 -i frame_%d.tiff -vf "scale=4536:2836" -c:v libx264 -crf 18 -preset slow -pix_fmt yuv420p output.mp4
     ```
 
-    
-
